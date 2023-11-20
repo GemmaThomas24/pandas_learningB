@@ -1,0 +1,59 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{background-color: rgb(166, 106, 133);}
+
+p{
+    font-size: 20px;
+    color:azure
+}
+
+h1,h2,h3{
+    color: rgb(186, 241, 238);
+    text-decoration: underline;
+}
+
+#navbar{
+    background-color: rgb(229, 144, 212);
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pink-text{
+    color: rgb(211, 5, 101);
+}
+
+a:hover{
+    color: white;
+}
+/* anchor elements - when hover link highlight in white */
+
+#navbar a{
+    font-size: 20px;
+}
+
+#fav h3{
+    color: rgb(143, 78, 186);
+}
+
+img{
+    width: 100px;
+}
+
+.first{
+    color: goldenrod;
+    font-weight: 500;
+}
+
+.second{
+    color: silver;
+    font-weight: 500;
+}
+
+.third{
+    color: brown;
+    font-weight: 500;
+}
+

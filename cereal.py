@@ -11,7 +11,7 @@ print(df.columns)
 # ! for ref there is 16 names
 
 # 3. Which cereals have more than 4g of protein?
-print(df.query('protein > 4'))
+print(df.query('protein > 4')["name"])
 # was originally going to use something similar to this method: print(df.loc[0:3,"Languages": "Ranking 2020":2])
 # was trying to research how to incorportate Int and finding cereal with more than 4g protein.
 # found on google (stackoverflow) the .query method, wasn't sure if it would work. But when i tried it and checked it agaist the excel s/sheet it was right
