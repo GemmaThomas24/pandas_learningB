@@ -5,7 +5,7 @@ import numpy as np
 
 # --------------------------------------------------------
 # Part of Activity 1- Data Acquisition- scrape populations and area of countries and build DF
-# Saved DataFrame to Excel - names output.xlsx
+# Saved DataFrame to Excel - named output.xlsx
 # --------------------------------------------------------
 
 html_text = requests.get("https://www.scrapethissite.com/pages/simple/").text
