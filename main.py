@@ -3,6 +3,10 @@ import requests
 import pandas as pd
 import numpy as np
 
+# --------------------------------------------------------
+# Part of Activity 1- Data Acquisition- scrape populations and area of countries and build DF
+# Saved DataFrame to Excel - names output.xlsx
+# --------------------------------------------------------
 
 html_text = requests.get("https://www.scrapethissite.com/pages/simple/").text
 # requesting browser to get you the info from web page. Finds/checks with google you're allowesd to make a connection- here is the page

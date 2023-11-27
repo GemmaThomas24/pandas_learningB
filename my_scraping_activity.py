@@ -2,6 +2,9 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 import numpy as np
+# ----------------------------------------------
+# ACTIVITY 2- DATA ACQUISITION
+# ----------------------------------------------
 
 with open('index.html','r') as file:
     html_text = file.read()

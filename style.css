@@ -2,7 +2,7 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{background-color: rgb(166, 106, 133);}
+body{background-color: rgba(233, 196, 231, 0.947);}
 
 p{
     font-size: 20px;
@@ -10,19 +10,19 @@ p{
 }
 
 h1,h2,h3{
-    color: rgb(186, 241, 238);
+    color: rgba(241, 119, 229, 0.93);
     text-decoration: underline;
 }
 
 #navbar{
-    background-color: rgb(229, 144, 212);
-    height: 40px;
+    background-color: rgb(244, 149, 222);
+    height: 80px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .pink-text{
-    color: rgb(211, 5, 101);
+    color: rgb(242, 85, 135);
 }
 
 a:hover{
@@ -35,11 +35,11 @@ a:hover{
 }
 
 #fav h3{
-    color: rgb(143, 78, 186);
+    color: rgb(78, 11, 129);
 }
 
 img{
-    width: 100px;
+    width: 200px;
 }
 
 .first{

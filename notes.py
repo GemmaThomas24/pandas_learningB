@@ -7,7 +7,7 @@ import numpy as np
 # Dtype- strings/mixed info in a series prints as an object
 languages = pd.Series(["Python", "JavaScript", "HTML", "SQL"])
 
-print(languages)
+# print(languages)
 
 ranking = pd.Series([3,1,2,4])
 
@@ -78,7 +78,7 @@ df["Ranking 2019"] = [4,1,2,3,8,5,10]
 
 df.insert(3, "Ranking 2021", [3,1,2,4,11,5,7])
 
-print(df)
+# print(df)
 # print(df.columns)- brings up columns names
 # how to find out index posion of coloumns if we have too many?? see line 84
 # df.columns.get_loc("ranking 2022")
@@ -102,16 +102,16 @@ print(df)
 # e.g- print (df["Ranking 2019"])- returns that one column and the data - []- double the square brackets to see what list of columns you want to see
 # print(df[["Ranking 2019", "Ranking 2020"]])
 
-print(df.loc[4])
+# print(df.loc[4])***
 
-print(df.loc[:, "Ranking 2020"])
+# print(df.loc[:, "Ranking 2020"]) ***
 
 # .loc expects info in certain way: df.loc[start:stop:step, start:stop:step]
 #                                             row                column
 
-# (df.loc[4:7, "Ranking 2020"])- row 4 to row 7 
+# (df.loc[4:7, "Ranking 2020"])- row 4 to row 7 shows
 
-print(df.loc[0:3,"Languages": "Ranking 2020":2])
+# print(df.loc[0:3,"Languages": "Ranking 2020":2])***
 # 2 shows every other column
 # 0:3 rows 0-3 (commer) "Languages (start): "Ranking 2020" (Stop here): 2 (only show every 2 columns)
 
@@ -126,5 +126,37 @@ print(df.loc[0:3,"Languages": "Ranking 2020":2])
 # print(df[df.select_dtypes(include="int") < 4 ])
 # Nan means not a number- what is FALSE will show as nan
 
+# -----------------------------------------------------------------------------------------
+#                             Small Cleaning Data Structures
+# -----------------------------------------------------------------------------------------
+# .rename() method, allows us to chnage name of 1 or all columns
+df.rename(columns = {"Ranking" : "Ranking 2023"}, inplace=True)
+# doesn't work: need (df =) or (inplace = True). 
+# print(df)
 
+# re-set index to a more useful reference point- that would be lang coloumn- so when data prints we have a reference to the data 
+# .set_index()method- allows us to set the index of a frame-use inplace = True
+df.set_index("Languages", inplace=True)
+# print(df)
+# print(df["Ranking 2023"])** isolates just 1 column
+# print(df.loc["HTML"])*** isolates row
+# 
+# -----------------------------------------------------------------
+#                              STATISTICS
+# -----------------------------------------------------------------
+
+# print(df.mean(axis=1))
+
+# print(df.mode(axis=1))
+# # PHP has 2 modes, others Nan, as only 1 mode in 1st column
+
+# print(df.median(axis=1))
+
+# print(df.min(axis=1))
+# print(df.max(axis=1))
+
+# print(df.sum())- add up everything in column and if put axis=1- work along the rows of lang
+
+print(df.sort_values(by=["Ranking 2022"],))
+# print(df.sort_values(by=["Ranking 2022"], ascending=False))- highest to lowest
 
